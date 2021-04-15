@@ -1,0 +1,134 @@
+@import 'normalize.min.css';
+
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "Aloha Paradise";
+  src: url('../assets/fonts/AlohaParadise-Bold.woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Storytella";
+  src: url('../assets/fonts/Storytella.woff');
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url('../assets/fonts/Raleway.woff');
+}
+
+body {
+  font-family:"Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Aloha Paradise", sans-serif;
+  font-size: 5em;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em auto;
+  width: 95%;
+}
+
+#logo-wrapper {
+  width: 45vw;
+}
+
+#logo {
+  width: 100%;
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-top {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+
+input {
+  margin: 0 .5em;
+  padding: .5em;
+}
+
+input[type="submit"] {
+  width: 10em;
+}
+
+.h-captcha {
+  margin-top: 1em;
+}
+
+@media all and (max-width: 550px) {
+  #logo-wrapper {
+    width: 100%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+
+  form, 
+  #form-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    margin: .25em 0;
+    padding: .5em .25em;
+    width: 250px;
+  }
+
+  input[type="submit"] {
+    width: 262px;
+  }
+
+}
