@@ -41,7 +41,14 @@ module.exports = {
   },
   variants: {
     extend: {
-      fontWeight: ['hover', 'focus']
+      fontWeight: ['hover', 'focus'],
+      translate: ['hover', 'focus'],
+      verticalAlign: ['hover', 'focus'],
+      transform: ['hover', 'focus'],
+      inset: ['hover', 'focus'],
+      transitionDelay: ['hover', 'focus'],
+      transitionTimingFunction: ['hover', 'focus'],
+      height: ['hover', 'focus']
     },
   },
   plugins: [
