@@ -1,46 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: 'Storytella';
-  src: url('public/fonts/Storytella.woff') format('woff'),
-       url('public/fonts/Storytella.woff2') format('woff2');
+  src: url('../fonts/Storytella.woff') format('woff'),
+       url('../fonts/Storytella.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Branders';
-  src: url('public/fonts/Branders-Light.woff') format('woff'),
-       url('public/fonts/Branders-Light.woff2') format('woff2');
+  src: url('../fonts/Branders-Light.woff') format('woff'),
+       url('../fonts/Branders-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('public/fonts/Raleway-Regular.woff') format('woff'),
-       url('public/fonts/Raleway-Regular.woff2') format('woff2');
+  src: url('../fonts/Raleway-Regular.woff') format('woff'),
+       url('../fonts/Raleway-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('Raleway-Bold.woff') format('woff'),
-       url('Raleway-Bold.woff2') format('woff2');
+  src: url('../fonts/Raleway-Bold.woff') format('woff'),
+       url('../fonts/Raleway-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('public/fonts/Raleway-BoldItalic.woff') format('woff'),
-       url('public/fonts/Raleway-BoldItalic.woff2') format('woff2');
+  src: url('../fonts/Raleway-BoldItalic.woff') format('woff'),
+       url('../fonts/Raleway-BoldItalic.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('public/Raleway-Italic.woff') format('woff'),
-       url('public/Raleway-Italic.woff2') format('woff2');
+  src: url('../fonts/Raleway-Italic.woff') format('woff'),
+       url('../fonts/Raleway-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
 }
@@ -48,3 +44,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
