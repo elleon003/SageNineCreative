@@ -46,9 +46,11 @@ module.exports = {
       verticalAlign: ['hover', 'focus'],
       transform: ['hover', 'focus'],
       inset: ['hover', 'focus'],
-      transitionDelay: ['hover', 'focus'],
-      transitionTimingFunction: ['hover', 'focus'],
-      height: ['hover', 'focus']
+      transitionProperty: ['group-hover', 'group-focus', 'focus', 'hover'],
+      transitionDelay: ['hover', 'focus', 'group-hover', 'group-focus'],
+      transitionTimingFunction: ['hover', 'focus', 'group-hover','group-focus'],
+      height: ['hover', 'focus', 'group-hover', 'group-focus'],
+      backgroundOpacity: ['group-focus']
     },
   },
   plugins: [

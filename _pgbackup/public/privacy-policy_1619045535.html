@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     </head>
     <body class="flex flex-col h-screen">
-        <header class="bg-black fixed shadow-lg w-full z-20"> 
+        <header class="bg-black fixed shadow-lg w-full z-10"> 
             <nav class="container flex flex-wrap items-center mx-auto px-4 py-5"> 
                 <a href="index.html" class="font-logo hover:underline mr-auto shadow-lg text-3xl text-white">Blue Autumn <span class="font-display text-4xl">Digital</span></a> 
                 <button class="px-3 py-2 rounded text-white lg:hidden" aria-label="Nav Toggle" data-name="nav-toggler" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true","name":"NavMenuToggler"}]}'> 
@@ -20,16 +20,15 @@
                 </button>                 
                 <div data-name="nav-menu" class="lg:flex lg:space-x-4 lg:space-y-0 lg:w-auto w-full hidden lg:items-center  flex-grow"> 
                     <div class="flex flex-col mx-auto text-white lg:flex-row"> 
-                        <a href="#about" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">Company</a>
+                        <a href="#about" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">About</a>
                         <a href="#services" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">Services</a>
-                        <a href="#team" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">The Team</a>
                         <a href="#clients" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">Clients</a>
                     </div>                     
                     <a href="contact.html" class="bg-red hover:font-bold hover:underline inline-block mt-3 px-5 py-2 rounded text-white uppercase lg:mt-0">Contact</a> 
                 </div>                 
             </nav>             
         </header>
-        <main class="flex-shrink-0 mt-20 relative" data-pgc-field="main">
+        <main class="flex-shrink-0 mt-20" data-pgc-field="main">
             <div class="container flex flex-col my-8 px-4 space-between text-xl">
                 <h1 class="font-bold text-3xl">Privacy Policy for Blue Autumn Digital LLC</h1>
                 <p class="my-4">At Blue Autumn Digital, accessible from <a href="https://blueautumndigital.com" class="hover:font-bold hover:underline text-red">https://blueautumndigital.com</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Blue Autumn Digital and how we use it.</p>
@@ -93,3 +92,5 @@
             </div>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>

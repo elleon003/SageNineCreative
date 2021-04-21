@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     </head>
     <body class="flex flex-col h-screen">
-        <header class="bg-black fixed shadow-lg w-full z-20"> 
+        <header class="bg-black fixed shadow-lg w-full z-10"> 
             <nav class="container flex flex-wrap items-center mx-auto px-4 py-5"> 
                 <a href="index.html" class="font-logo hover:underline mr-auto shadow-lg text-3xl text-white">Blue Autumn <span class="font-display text-4xl">Digital</span></a> 
                 <button class="px-3 py-2 rounded text-white lg:hidden" aria-label="Nav Toggle" data-name="nav-toggler" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true","name":"NavMenuToggler"}]}'> 
@@ -30,13 +30,8 @@
             </nav>             
         </header>
         <main class="flex-shrink-0 mt-20 relative" data-pgc-field="main">
-            <div class="bg-white fixed h-full hidden left-0 opacity-0 right-0 top-0 w-full z-10" data-pg-ia-show data-pg-ia='{"l":[{"trg":"load","name":"Pre-loader","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}},{"t":"set","p":0.5,"d":0,"l":{"display":"none"}}]}]}}]}'>
-                <div class="animate-pulse flex font-bold h-full items-center justify-center text-4xl w-full">
-                    <p>
-            Loading... </p>
-                </div>
-            </div>
-            <div class="min-h-full">
+            <div class="bg-white fixed h-full left-0 right-0 top-0 w-full z-50"></div>
+            <div class="min-h-screen">
                 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
                 <iframe src="https://hello.dubsado.com:443/public/form/view/607c81c188c09d28a4e4267c" frameborder="0" style="width:1px; min-width:100%;"></iframe>
                 <script type="text/javascript">setTimeout(function(){iFrameResize({checkOrigin: false, heightCalculationMethod: "taggedElement"});}, 30)</script>
@@ -58,3 +53,5 @@
             </div>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
