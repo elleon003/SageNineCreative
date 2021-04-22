@@ -1,21 +1,26 @@
 {
-  "name": "BlueAutumnDigital2.0",
+  "name": "blueautumndigital",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
-    "build": "postcss source.tailwind.css -o public/build/tailwind.css"
+    "build": "npx tailwindcss-cli build source.tailwind.css -o public/build/tailwind.css",
+    "build:prod": "SET NODE_ENV=production npx tailwindcss-cli build source.tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elleon003/BlueAutumnDigital.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elleon003/BlueAutumnDigital/issues"
+  },
+  "homepage": "https://github.com/elleon003/BlueAutumnDigital#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.9",
-    "postcss-cli": "^8.3.1",
+    "postcss": "^8.2.10",
     "tailwindcss": "^2.1.1"
-  },
-  "dependencies": {
-    "@tailwindcss/forms": "^0.3.2"
   }
 }

@@ -1,5 +1,7 @@
 module.exports = {
-  purge: [],
+  purge: [
+    'public/*.html',
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     container: {
@@ -53,7 +55,5 @@ module.exports = {
       backgroundOpacity: ['group-focus']
     },
   },
-  plugins: [
-    require('@tailwindcss/forms')
-  ],
+  plugins: [],
 }
