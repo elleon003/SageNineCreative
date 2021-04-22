@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build": "npx tailwindcss-cli build source.tailwind.css -o public/build/tailwind.css",
-    "build:prod": "SET NODE_ENV=production npx tailwindcss-cli build source.tailwind.css -o public/build/tailwind.css"
+    "build:prod": "NODE_ENV=production npx tailwindcss-cli build source.tailwind.css -o public/build/tailwind.css"
   },
   "repository": {
     "type": "git",
