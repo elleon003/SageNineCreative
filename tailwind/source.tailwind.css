@@ -49,7 +49,19 @@ html {
 @tailwind utilities;
 
 @layer base {
+  h2 {
+    @apply text-5xl font-semibold font-display;
+  }
+  h3 {
+    @apply text-4xl font-bold;
+  }
   p {
     @apply text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-2xl bg-red hover:bg-red-dark hover:underline px-5 py-2 rounded-lg text-white;
   }
 }

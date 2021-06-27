@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: [
     '../*.html',
   ],
@@ -10,7 +11,7 @@ module.exports = {
     fontFamily: {
       'sans': ['Montserrat', 'ui-sans-serif', 'system-ui'],
       'body': ['Montserrat', 'ui-sans-serif', 'system-ui'],
-      'display': ['Quattrocento Sans'],
+      'display': ['"Quattrocento Sans"'],
     },
     colors: {
       red: {
