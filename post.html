@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="en" data-pgc-set-master class="h-full" wp-template wp-template-export-as="index.php" wp-template-define-master-page="true"> 
+<html lang="en" data-pgc-set-master class="h-full" wp-template wp-template-export-as="single.php"> 
 	<head> 
 		<meta charset="UTF-8"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -59,7 +59,7 @@
 		<header class="bg-black fixed shadow-lg w-full z-20"> 
 			<nav class="container flex flex-wrap items-center justify-between mx-auto px-4 py-5" cms-section="header" cms-section-title="Header Content"> 
 				<div class="max-w-sm"> 
-					<a href="/" class="mr-auto shadow-lg"><img src="img/BWLogo.png" alt="Sage Nine Creative"></a> 
+					<a href="index.html" class="mr-auto shadow-lg" cms-site-name><img src="img/BWLogo.png" alt="Sage Nine Creative" cms-editable="Logo" cms-editable-type="image" cms-editable-label="Logo" cms-editable-section="header"></a> 
 				</div>				 
 				<button class="px-3 py-2 rounded text-white lg:hidden" aria-label="Nav Toggle" data-name="nav-toggler" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true","name":"NavMenuToggler"}]}'> 
 					<span class="block border-b-2 border-current my-1 w-6"></span> 
@@ -73,19 +73,23 @@
 						<a href="#team" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">The Team</a> 
 						<a href="#clients" class="font-light hover:font-bold hover:underline px-0 py-2 uppercase lg:px-4">Clients</a> 
 					</div>					 
-					<a href="contact" class="bg-red hover:font-bold hover:underline inline-block mt-3 px-5 py-2 rounded text-white uppercase lg:mt-0" cms-editable="Contact Button Text" cms-editable-type="content" cms-editable-type-2="link" cms-editable-label="Contact Button Text" cms-editable-section="header" cms-editable-2="Contact Button Link" cms-editable-label-2="Contact Button Link" cms-editable-section-2="header">Contact</a> 
+					<a href="contact.html" class="bg-red hover:font-bold hover:underline inline-block mt-3 px-5 py-2 rounded text-white uppercase lg:mt-0" cms-editable="Contact Button Text" cms-editable-type="content" cms-editable-type-2="link" cms-editable-label="Contact Button Text" cms-editable-section="header" cms-editable-2="Contact Button Link" cms-editable-label-2="Contact Button Link" cms-editable-section-2="header">Contact</a> 
 				</div>				 
 			</nav>			 
 		</header>		 
 		<main data-pgc-edit="main" class="flex-shrink-0 mt-20 relative" wp-site-content> 
-</main>		 
+			<div class="container h-full pt-24 px-8 lg:px-24 xl:px-32"> 
+				<h2 class="pb-8 text-center" cms-post-title>Thank you!</h2>
+				<img src="http://pinegrow.com/placeholders/img10.jpg" class="mx-auto my-8 w-full md:w-2/3"/> 
+				<p cms-post-content class="pb-8 pt-4">Thanks for filling out our form. We&apos;ll be in touch shortly.</p> 
+			</div>			 
+		</main>		 
 		<footer class="bg-gray mt-auto"> 
 			<div class="container mt-auto mx-auto px-4 text-gray-700"> 
 				<div class="py-4 text-sm"> 
 					<div class="flex flex-wrap -mx-4  items-center"> 
 						<div class="px-4 py-2 w-full md:flex-1"> 
-							<p>&copy; 
- <php>echo date("Y");</php>  <span><a href="https://sageninecreative.com" class="hover:font-bold hover:underline" target="_pg_blank" cms-site-name> Sage Nine Creative</a></span></p> 
+							<p>&copy;  <php>echo date("Y");</php> <span><a href="https://sageninecreative.com" class="hover:font-bold hover:underline" target="_pg_blank" cms-site-name> Sage Nine Creative</a></span></p> 
 						</div>						 
 						<div class="px-4 py-2 w-full sm:w-auto"> 
 							<a href="privacy-policy.html" class="hover:font-bold hover:underline" cms-site-link="page" cms-site-link-post="privacy-policy">Privacy Policy</a> 
