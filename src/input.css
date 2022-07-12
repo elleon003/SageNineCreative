@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/fonts/quattrocento-sans-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/fonts/quattrocento-sans-regular.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h1, h2, h3{
+    @apply font-display font-semibold;
+  }
+  p, a, li {
+    @apply font-sans text-xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-3 px-10 block rounded-md;
+  }
+}
